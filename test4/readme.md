@@ -3,7 +3,7 @@
 ### 前提说明
 - 使用用户： `mao_user`
 
-### 运行sql运行sql
+### 运行sql
 ![](./imgs/sql.png)
 ### 实验部分
 - 1.从orders表中查询任一个
@@ -21,7 +21,7 @@ order_idselect * from orders where order_id=8024;
 update order_details set product_num=5 where id=24070;
 ```
 ![](./imgs/update.png)
-- 4.验证更改是否成功：验证更改是否成功：
+- 4.验证更改是否成功：
 ```sql
  select * from order_details where order_id=8024;
 ```
@@ -41,7 +41,8 @@ delete from order_details where order_id=24073;
 insert into order_details values (300001,8022,'mao',1,4000);
 ```
 ![](./imgs/insert.%5Bng.png);
-- 验证插入
+- 验证插入  
+
 ![](./imgs/confirminsert.png)
 - 8.查询谋某个员工信息：
 ```sql
