@@ -35,14 +35,18 @@ create or replace PACKAGE BODY MyPack IS
     END;
 END MyPack;
 ```
-- 结果
-![](./imgs/sql.png)
+- 结果  
+
+![](./imgs/sql.png)  
+
 - 2.1测试SaleAmount函数
 ```sql
 select MyPack.SaleAmount(1) AS 部门1应收金额,MyPack.SaleAmount(11) AS 部门11应收金额 from dual;
 ```
-- 结果
-![](./imgs/2.png)
+- 结果  
+
+![](./imgs/2.png)  
+
 - 2.2测试Employees函数
 ```sql
 set serveroutput on
@@ -55,5 +59,6 @@ BEGIN
   MYPACK.Employees (  V_EMPLOYEE_ID => V_EMPLOYEE_ID) ;    
 END;
 ```
-- 结果
+- 结果  
+
 ![](./imgs/2.2.png)
